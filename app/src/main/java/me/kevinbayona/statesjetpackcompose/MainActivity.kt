@@ -26,24 +26,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-
+            StateScreen()
         }
     }
 }
 
-@Preview(showSystemUi = true)
-@Composable
-fun StateScreen(){
 
-    Column(
-        modifier = Modifier.fillMaxSize(),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        Text("Contador = 0", fontSize = 32.sp)
-        Spacer(modifier = Modifier.height(25.dp))
-        Button(onClick =  { }) {
-            Text("Sumar 1")
-        }
-    }
-}
